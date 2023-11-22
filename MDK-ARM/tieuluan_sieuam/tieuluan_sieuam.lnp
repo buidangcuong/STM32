@@ -1,0 +1,28 @@
+--cpu Cortex-M3
+"tieuluan_sieuam\startup_stm32f103xb.o"
+"tieuluan_sieuam\i2c-lcd.o"
+"tieuluan_sieuam\main.o"
+"tieuluan_sieuam\gpio.o"
+"tieuluan_sieuam\i2c.o"
+"tieuluan_sieuam\tim.o"
+"tieuluan_sieuam\stm32f1xx_it.o"
+"tieuluan_sieuam\stm32f1xx_hal_msp.o"
+"tieuluan_sieuam\stm32f1xx_hal_gpio_ex.o"
+"tieuluan_sieuam\stm32f1xx_hal_i2c.o"
+"tieuluan_sieuam\stm32f1xx_hal.o"
+"tieuluan_sieuam\stm32f1xx_hal_rcc.o"
+"tieuluan_sieuam\stm32f1xx_hal_rcc_ex.o"
+"tieuluan_sieuam\stm32f1xx_hal_gpio.o"
+"tieuluan_sieuam\stm32f1xx_hal_dma.o"
+"tieuluan_sieuam\stm32f1xx_hal_cortex.o"
+"tieuluan_sieuam\stm32f1xx_hal_pwr.o"
+"tieuluan_sieuam\stm32f1xx_hal_flash.o"
+"tieuluan_sieuam\stm32f1xx_hal_flash_ex.o"
+"tieuluan_sieuam\stm32f1xx_hal_exti.o"
+"tieuluan_sieuam\stm32f1xx_hal_tim.o"
+"tieuluan_sieuam\stm32f1xx_hal_tim_ex.o"
+"tieuluan_sieuam\system_stm32f1xx.o"
+--strict --scatter "tieuluan_sieuam\tieuluan_sieuam.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "tieuluan_sieuam.map" -o tieuluan_sieuam\tieuluan_sieuam.axf
